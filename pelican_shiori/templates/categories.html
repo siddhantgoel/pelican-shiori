@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-archive">
+    {% for category, articles in categories|sort %}
+    <h2 class="section-header">
+        {{ category.name }}
+    </h2>
+    {% for first_group in articles|groupby('date.year')|sort(reverse=True) %}
+    {% for second_group in first_group|groupby('date.month')|sort(reverse=True) %}
+    <h3 class="section-header-archive">
+        {{ second_group.grouper }} {{ first_group.grouper }}
+    </h3>
+
+    {% for article in second_group.list %}
+    <p>
+        <a href="{{ SITEURL }}/{{ article.url }}" class="post-title-archive">
+            {{ article.title }}
+        </a>
+        <small class="text-muted">
+            {{ article.date.strftime('%b %d, %Y') }}
+        </small>
+    </p>
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}

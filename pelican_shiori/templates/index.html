@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for article in articles[:SHIORI_INDEX_ARTICLES_COUNT] %}
+<div class="post-header-home">
+    <h1 class="post-title-home">
+        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    </h1>
+</div>
+
+<div class="post-excerpt-home">
+    {{ article.summary }}
+    <p class="text-right">
+        <a href="{{ SITEURL }}/{{ article.url }}">Continue Reading &rarr;</a>
+    </p>
+</div>
+{% endfor %}
+
+<hr>
+
+<div class="home-read-more">
+    <a href="{{ SITEURL }}/archive" class="btn btn-primary btn-block btn-lg">
+        View All {{ articles|length }} Articles →
+    </a>
+</div>
+{% endblock %}
