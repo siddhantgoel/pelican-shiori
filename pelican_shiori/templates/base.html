@@ -1,4 +1,6 @@
-{% set SHIORI_INDEX_ARTICLES_COUNT = SHIORI_INDEX_ARTICLES_COUNT or 5 %}
+{% set SHIORI_HIDE_SIDEBAR = SHIORI_HIDE_SIDEBAR|default(False) %}
+{% set SHIORI_INDEX_ARTICLES_COUNT = SHIORI_INDEX_ARTICLES_COUNT|default(5)|int %}
+{% set SHIORI_THEME = SHIORI_THEME|default('default')|string|lower %}
 
 <!DOCTYPE html>
 <html>
