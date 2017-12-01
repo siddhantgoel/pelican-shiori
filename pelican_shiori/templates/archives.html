@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+Archives | {{ SITENAME }}
+{% endblock %}
+
 {% block content %}
 <div class="page-archive">
     {% for first_group in articles|groupby('date.year')|sort(reverse=True) %}

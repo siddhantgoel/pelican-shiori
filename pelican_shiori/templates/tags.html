@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+Tags | {{ SITENAME }}
+{% endblock %}
+
 {% block content %}
 <div class="page-archive">
     {% for tag, articles in tags|sort %}

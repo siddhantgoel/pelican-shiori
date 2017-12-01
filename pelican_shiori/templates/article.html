@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+{{ article.title }} | {{ SITENAME }}
+{% endblock %}
+
 {% block content %}
 <div class="post-header">
     <h1 class="post-title-main">{{ article.title }}</h1>
