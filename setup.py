@@ -1,0 +1,24 @@
+from setuptools import setup
+
+
+setup(
+    name='pelican_shiori',
+    author='Siddhant Goel',
+    author_email='siddhantgoel@gmail.com',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Framework :: Pelican :: Themes',
+        'License :: OSI Approved :: ISC License (ISCL)',
+        'Programming Language :: Python :: 3 :: Only',
+    ],
+    install_requires=['jinja2', 'webassets'],
+    package_data={
+        'bulrush': [
+            'templates/*.html',
+            'static/css/**/*.scss',
+        ]
+    },
+    packages=['pelican_shiori'],
+    url='https://github.com/siddhantgoel/pelican-shiori',
+    version='0.1.0',
+)
