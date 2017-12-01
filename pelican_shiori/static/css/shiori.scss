@@ -44,15 +44,17 @@ $purple: #9b59b6;
 $orange: #e67e22;
 $red: #e74c3c;
 
-{% if SHIORI_THEME != "default" %}
-  $theme-color: ${{ SHIORI_THEME }};
-  $navbar-inverse-bg: $theme-color;
-  @if $theme-color == $dark {
-    $brand-primary: $dark-brand-primary;
-  } @else {
-    $brand-primary: $theme-color;
-  }
-{% endif %}
+/*
+ *{% if SHIORI_THEME != "default" %}
+ *  $theme-color: ${{ SHIORI_THEME }};
+ *  $navbar-inverse-bg: $theme-color;
+ *  @if $theme-color == $dark {
+ *    $brand-primary: $dark-brand-primary;
+ *  } @else {
+ *    $brand-primary: $theme-color;
+ *  }
+ *{% endif %}
+ */
 
 @import "bootstrap-sass/bootstrap";
 @import "pygments-tomorrow";

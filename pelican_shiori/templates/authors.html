@@ -7,9 +7,9 @@
         {{ author.name }}
     </h2>
     {% for first_group in articles|groupby('date.year')|sort(reverse=True) %}
-    {% for second_group in first_group|groupby('date.month')|sort(reverse=True) %}
+    {% for second_group in first_group.list|groupby('date.month')|sort(reverse=True) %}
     <h3 class="section-header-archive">
-        {{ second_group.grouper }} {{ first_group.grouper }}
+        {{ second_group.list[0].date|strftime('%B') }} {{ first_group.grouper }}
     </h3>
 
     {% for article in second_group.list %}
@@ -18,7 +18,7 @@
             {{ article.title }}
         </a>
         <small class="text-muted">
-            {{ article.date.strftime('%b %d, %Y') }}
+            {{ article.date|strftime('%b %d, %Y') }}
         </small>
     </p>
     {% endfor %}
