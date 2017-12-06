@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def asset_config(theme):
+def asset_config(theme='default'):
     return (
         ('JINJA2_CONTEXT', {'theme': theme}),
     )
