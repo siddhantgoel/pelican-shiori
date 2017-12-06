@@ -8,12 +8,12 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: Pelican :: Themes',
-        'License :: OSI Approved :: ISC License (ISCL)',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3 :: Only',
     ],
     install_requires=['jinja2', 'webassets'],
     package_data={
-        'bulrush': [
+        'pelican_shiori': [
             'templates/*.html',
             'static/css/**/*.scss',
         ]
