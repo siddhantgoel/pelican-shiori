@@ -1,0 +1,5 @@
+include pelican_shiori/static/templates/*.html
+include pelican_shiori/static/css/*.scss
+include pelican_shiori/static/css/bootstrap-sass/*.scss
+include pelican_shiori/static/css/bootstrap-sass/bootstrap/*.scss
+include pelican_shiori/static/css/bootstrap-sass/bootstrap/mixins/*.scss

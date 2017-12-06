@@ -11,13 +11,8 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3 :: Only',
     ],
+    include_package_data=True,
     install_requires=['jinja2', 'webassets'],
-    package_data={
-        'pelican_shiori': [
-            'templates/*.html',
-            'static/css/**/*.scss',
-        ]
-    },
     packages=['pelican_shiori'],
     url='https://github.com/siddhantgoel/pelican-shiori',
     version='0.1.0',
