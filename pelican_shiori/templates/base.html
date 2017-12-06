@@ -13,7 +13,7 @@
         <link href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic" rel="stylesheet" type='text/css'>
         <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        {% assets filters="scss,cssmin", output="css/style.min.css", "css/shiori.scss" %}
+        {% assets filters="jinja2,scss,cssmin", output="css/style.min.css", "css/shiori.scss" %}
         <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
         {% endassets %}
 

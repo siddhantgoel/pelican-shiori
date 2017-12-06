@@ -44,20 +44,17 @@ $purple: #9b59b6;
 $orange: #e67e22;
 $red: #e74c3c;
 
-/*
- *{% if SHIORI_THEME != "default" %}
- *  $theme-color: ${{ SHIORI_THEME }};
- *  $navbar-inverse-bg: $theme-color;
- *  @if $theme-color == $dark {
- *    $brand-primary: $dark-brand-primary;
- *  } @else {
- *    $brand-primary: $theme-color;
- *  }
- *{% endif %}
- */
+{% if theme != 'default' %}
+$theme-color: ${{ theme }};
+$navbar-inverse-bg: $theme-color;
+@if $theme-color == $dark {
+    $brand-primary: $dark-brand-primary;
+} @else {
+    $brand-primary: $theme-color;
+}
+{% endif %}
 
 @import "bootstrap-sass/bootstrap";
-@import "pygments-tomorrow";
 
 $space-xs: $line-height-computed * 1;
 $space-sm: $line-height-computed * 1.5;
@@ -189,3 +186,5 @@ h3 {
     height: ($navbar-height + 34px) / 2;
   }
 }
+
+@import "custom-scss";
