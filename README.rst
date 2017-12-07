@@ -1,6 +1,9 @@
 pelican-shiori
 ==============
 
+.. image:: https://badge.fury.io/py/pelican-shiori.svg
+    :target: https://pypi.python.org/pypi/pelican-shiori
+
 :code:`pelican-shiori` is a port of the Shiori_ theme (originally built for
 Jekyll by `Elle Kasai`_) to Pelican_.
 
