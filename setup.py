@@ -1,8 +1,19 @@
+import io
+import os.path
 from setuptools import setup
+
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+
+with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = '\n' + f.read()
 
 
 setup(
     name='pelican_shiori',
+    description='Shiori theme for Pelican',
+    long_description=long_description,
     author='Siddhant Goel',
     author_email='siddhantgoel@gmail.com',
     classifiers=[
@@ -19,7 +30,7 @@ setup(
     install_requires=['jinja2', 'webassets'],
     packages=['pelican_shiori'],
     url='https://github.com/siddhantgoel/pelican-shiori',
-    version='0.1.0',
+    version='0.1.1',
     license='MIT',
     keywords='python pelican pelican-theme static-site'
 )
