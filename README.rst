@@ -54,8 +54,8 @@ change it to one of the supported values, adjust the :code:`SHIORI_THEME` and
     SHIORI_THEME = 'blue'
     ASSET_CONFIG = pelican_shiori.asset_config(SHIORI_THEME)
 
-Please make sure that the argument given to `pelican_shiori.asset_config` is the
-same as `SHIORI_THEME`. `Bad things`_ may happen otherwise.
+Please make sure that the argument given to :code:`pelican_shiori.asset_config`
+is the same as :code:`SHIORI_THEME`. `Bad things`_ may happen otherwise.
 
 .. _assets: https://github.com/getpelican/pelican-plugins/tree/master/assets
 .. _Bad things: https://www.xkcd.com/292
