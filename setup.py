@@ -30,7 +30,7 @@ setup(
     install_requires=['cssmin', 'jinja2', 'webassets'],
     packages=['pelican_shiori'],
     url='https://github.com/siddhantgoel/pelican-shiori',
-    version='0.1.1',
+    version='0.2.0',
     license='MIT',
     keywords='python pelican pelican-theme static-site'
 )
