@@ -38,11 +38,12 @@ Configuration
 
 The following configuration variables are supported.
 
+- :code:`SHIORI_AVATAR_URL`: URL of the avatar you'd like to show on the sidebar
+- :code:`SHIORI_HIDE_SIDEBAR`: whether or not to show the sidebar
+- :code:`SHIORI_INDEX_ARTICLES_COUNT`: number of articles to show on the index page
 - :code:`SHIORI_THEME`: which color scheme to use (one of :code:`dark`,
   :code:`turquoise`, :code:`green`, :code:`blue`, :code:`purple`,
   :code:`orange`, :code:`red`)
-- :code:`SHIORI_HIDE_SIDEBAR`: whether or not to show the sidebar
-- :code:`SHIORI_INDEX_ARTICLES_COUNT`: number of articles to show on the index page
 
 Color Schemes
 -------------

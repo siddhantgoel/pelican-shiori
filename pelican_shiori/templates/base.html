@@ -1,6 +1,7 @@
 {% set SHIORI_HIDE_SIDEBAR = SHIORI_HIDE_SIDEBAR|default(False) %}
 {% set SHIORI_INDEX_ARTICLES_COUNT = SHIORI_INDEX_ARTICLES_COUNT|default(5)|int %}
 {% set SHIORI_THEME = SHIORI_THEME|default('default')|string|lower %}
+{% set SHIORI_AVATAR_URL = SHIORI_AVATAR_URL|default('https://robohash.org/pelican-shiori.png?size=128x128')|string|lower %}
 
 <!DOCTYPE html>
 <html>
@@ -98,13 +99,13 @@
                 {% if not SHIORI_HIDE_SIDEBAR %}
                 <div class="col-sm-4">
                     <h3 class="section-header">
-                        {{ AUTHOR }}
+                        Author
                     </h3>
 
                     <div class="media">
                         <h4 class="media-heading">{{ AUTHOR }}</h4>
                         <div class="media-body">
-                            <img src="https://api.adorable.io/avatars/285/abott@adorable.png">
+                            <img src="{{ SHIORI_AVATAR_URL }}">
                         </div>
                     </div>
                 </div>
