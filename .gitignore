@@ -103,4 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# Project settings
+output/
+
 # End of https://www.gitignore.io/api/python
