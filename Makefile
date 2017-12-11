@@ -1,6 +1,7 @@
 GH_PAGES_BRANCH=gh-pages
 INPUT=$(CURDIR)/content
-OUTPUTDIR=$(CURDIR)/output
+OUTPUT=$(CURDIR)/output
+PELICAN?=pelican
 
 clean:
 	rm -f dist/*.tar.gz
@@ -13,7 +14,11 @@ build:
 upload: build
 	twine upload dist/*
 
-generate:
-	$(PELICAN) $(INPUT) -o $(OUTPUT) -s publishconf.py content
+publish:
+	$(PELICAN) $(INPUT) -o $(OUTPUT) -s publishconf.py
 
-.PHONY: clean build upload
+github: publish
+	ghp-import -m "Generate Pelican site" -b $(GH_PAGES_BRANCH) $(OUTPUT)
+	git push origin $(GH_PAGES_BRANCH)
+
+.PHONY: clean build upload publish github
