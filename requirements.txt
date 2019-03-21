@@ -1,5 +1,5 @@
 blinker==1.4
-certifi==2017.11.5
+certifi==2019.3.9
 chardet==3.0.4
 cssmin==0.2.0
 docutils==0.14
