@@ -16,7 +16,7 @@ pytz==2017.3
 requests==2.21.0
 requests-toolbelt==0.8.0
 six==1.11.0
-tqdm==4.19.4
+tqdm==4.31.1
 twine==1.13.0
 Unidecode==1.0.23
 urllib3==1.24.1
