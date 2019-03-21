@@ -1,10 +1,10 @@
 blinker==1.4
-certifi==2017.11.5
+certifi==2019.3.9
 chardet==3.0.4
 cssmin==0.2.0
 docutils==0.14
 feedgenerator==1.9
-idna==2.6
+idna==2.8
 Jinja2==2.10
 Markdown==2.6.10
 MarkupSafe==1.0
@@ -13,11 +13,11 @@ pkginfo==1.4.1
 Pygments==2.2.0
 python-dateutil==2.6.1
 pytz==2017.3
-requests==2.18.4
+requests==2.21.0
 requests-toolbelt==0.8.0
 six==1.11.0
 tqdm==4.19.4
 twine==1.9.1
 Unidecode==1.0.23
-urllib3==1.22
+urllib3==1.24.1
 webassets==0.12.1
