@@ -18,6 +18,6 @@ requests-toolbelt==0.8.0
 six==1.11.0
 tqdm==4.19.4
 twine==1.9.1
-Unidecode==0.4.21
+Unidecode==1.0.23
 urllib3==1.24.1
 webassets==0.12.1
