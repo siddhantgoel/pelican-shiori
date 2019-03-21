@@ -6,7 +6,7 @@ docutils==0.14
 feedgenerator==1.9
 idna==2.6
 Jinja2==2.10
-Markdown==2.6.10
+Markdown==3.0.1
 MarkupSafe==1.0
 pelican==3.7.1
 pkginfo==1.4.1
