@@ -17,7 +17,7 @@ requests==2.22.0
 requests-toolbelt==0.9.1
 six==1.12.0
 tqdm==4.35.0
-twine==1.14.0
+twine==1.15.0
 Unidecode==1.1.1
 urllib3==1.25.3
 webassets==0.12.1
