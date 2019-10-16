@@ -13,7 +13,7 @@ pelican-shiori License
 
 MIT License
 
-Copyright (c) 2017 Siddhant Goel
+Copyright (c) 2019 Siddhant Goel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -38,7 +38,7 @@ Shiori License
 
 MIT License
 
-Copyright (c) 2017 Elle Kasai
+Copyright (c) 2019 Elle Kasai
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
