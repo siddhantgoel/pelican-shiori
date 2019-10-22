@@ -1,8 +1,17 @@
+**NOTE**: please note that this project is not being actively
+developed/maintained because of time constraints. Feel free to reach out to me
+(or open an issue here on Github) if you're interesting in taking over this
+project.
+
 pelican-shiori
 ==============
 
 .. image:: https://badge.fury.io/py/pelican-shiori.svg
     :target: https://pypi.python.org/pypi/pelican-shiori
+
+.. image:: https://www.repostatus.org/badges/latest/inactive.svg
+   :alt: Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.
+   :target: https://www.repostatus.org/#inactive
 
 :code:`pelican-shiori` is a port of the Shiori_ theme (originally built for
 Jekyll by `Elle Kasai`_) to Pelican_.
