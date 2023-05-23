@@ -13,7 +13,7 @@ pkginfo==1.5.0.1
 Pygments==2.7.4
 python-dateutil==2.8.1
 pytz==2019.3
-requests==2.23.0
+requests==2.31.0
 requests-toolbelt==0.9.1
 six==1.14.0
 tqdm==4.44.1
